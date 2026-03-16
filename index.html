@@ -13,8 +13,11 @@ html,body,.blog-posts,.post-body,.post,.page-body,#main-wrapper,
 .post-outer-container{display:none!important;}
 
 *{box-sizing:border-box;}
-body{background:#020617!important;color:#fff!important;font-family:'Inter',system-ui,sans-serif!important;margin:0!important;padding:0!important;min-height:100vh!important;}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;}
+body{background:#020617!important;color:#fff!important;font-family:'Inter',system-ui,sans-serif!important;margin:0!important;padding:0!important;min-height:100vh!important;overflow-x:hidden!important;width:100%!important;}
 .post-body{margin:0!important;padding:0!important;width:100%!important;max-width:100%!important;float:none!important;}
+img,video,iframe{max-width:100%!important;height:auto!important;}
+#pf{overflow-x:hidden;width:100%;}
 
 /* ── ROOT ── */
 #pf{background:#020617;min-height:100vh;color:#fff;font-family:'Inter',system-ui,sans-serif;}
@@ -121,7 +124,7 @@ body{background:#020617!important;color:#fff!important;font-family:'Inter',syste
       <a href="#pf-edu">Education</a>
       <a href="#pf-contact">Contact</a>
     </div>
-    <a href="mailto:Alyanejaz4@gmail.com" style="font-size:12px;font-weight:700;padding:8px 18px;border-radius:9999px;border:1px solid rgba(56,189,248,.38);color:#38bdf8;display:flex;align-items:center;gap:6px;transition:background .2s;" onmouseover="this.style.background='rgba(56,189,248,.07)'" onmouseout="this.style.background='transparent'">
+    <a href="mailto:Alyanejaz4@gmail.com" target="_blank" style="font-size:12px;font-weight:700;padding:8px 18px;border-radius:9999px;border:1px solid rgba(56,189,248,.38);color:#38bdf8;display:flex;align-items:center;gap:6px;transition:background .2s;" onmouseover="this.style.background='rgba(56,189,248,.07)'" onmouseout="this.style.background='transparent'">
       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
       Get in Touch
     </a>
@@ -172,12 +175,20 @@ body{background:#020617!important;color:#fff!important;font-family:'Inter',syste
       <p style="color:#94a3b8;line-height:1.8;margin-bottom:28px;font-size:15px;">
         My goal is simple: to engineer seamless digital experiences that <span style="color:#fff;font-weight:500;">drive growth</span> while reclaiming your time through <span style="color:#10b981;font-weight:500;">intelligent automation</span>.
       </p>
-      <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;">
+      <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:28px;">
         <span class="bb">📍 Islamabad, Pakistan</span>
         <span class="bb">AI Specialist</span>
         <span class="bb">Full-Stack Dev</span>
         <span class="bg">SEO Expert</span>
       </div>
+      <!-- Download Resume Button -->
+      <a href="https://drive.google.com/uc?export=download&id=1oCFgmyWc8H1Skfrd_cJ4HqueViUaDnra" target="_blank"
+        style="display:inline-flex;align-items:center;gap:10px;padding:14px 32px;border-radius:9999px;font-weight:700;font-size:15px;color:#020617;background:linear-gradient(135deg,#38bdf8,#10b981);box-shadow:0 0 32px rgba(56,189,248,0.3);transition:all .25s;text-decoration:none;"
+        onmouseover="this.style.transform='scale(1.05)';this.style.boxShadow='0 0 48px rgba(56,189,248,0.5)'"
+        onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 0 32px rgba(56,189,248,0.3)'">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download Resume
+      </a>
     </div>
     <!-- Stats -->
     <div class="stats-grid">
